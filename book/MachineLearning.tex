@@ -1,0 +1,59 @@
+\documentclass[polish,12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\title{Machine Learning}
+\author{Fafer77}
+\begin{document}
+	\maketitle
+	\section{Definitions}
+	\begin{enumerate}
+		\item Measures of central tendency (they describe a central position of your data):
+		\begin{enumerate}
+			\item Mean
+			\item Mode
+			\item Median
+		\end{enumerate}
+		\item Measures of spread (describe how spread out your data is - clumped together or spread far apart):
+		\begin{enumerate}
+			\item Range
+			\item Quartiles
+			\item Standard deviation
+			\item Variance
+		\end{enumerate}
+		\item Training set - data used for training
+		\item Training example (sample) - A single instance used in machine learning to train a model. It typically consists of input features and, in supervised learning, an associated label or target value.
+		\item Accuracy - the ratio of correctly predicted instances to the total number of instances in the dataset. 
+		\[
+		\text{Accuracy} = \frac{\text{Number of correct predictions}}{\text{Total number of predictions}}
+		\]
+		\item Problem regresyjny: przewidywanie wartości na podstawie cechy wejściowej
+		\item Wydobywanie cech (ang.feature extraction) - polega na znalezieniu skorelowanych cech i połączenie ich w jedną
+		\item Classification task - involves predicting a discrete label or category for a given input based on its features e.g 'spam' or 'not spam'
+		\item Data mining - analyzing huge amount of data to find some patterns
+		\item Types of learning:
+		\begin{enumerate}
+			\item Uczenie nadzorowane (ang. supervised learning) - dane uczące przekazywane algorytmowi zawierają dołączone rozwiązania problemu, tzw. etykiety (ang. labels). \\
+			Typowe zadania systemu nadzorowanego:
+			\begin{enumerate}
+				\item Klasyfikacja np. filtr spamu
+				\item Przewidywanie docelowej (ang. target) wartości numerycznej np. cena samochodu przy użyciu określonego zbioru cech. Ten typ zadania nosi nazwę regresji.
+			\end{enumerate}
+			\item Uczenie nienadzorowane (eng. unsupervised learning) - dane uczące są nieoznakowane. System próbuje się uczyć bez nauczyciela.
+			\begin{enumerate}
+				\item Analiza skupień
+				\item Algorytm wizualizujący, redukcja wymiarowości - cel uproszczenie danych bez utraty nadmiernej ilości informacji.
+				\item Wykrywanie anomalii (ang. anomaly detection) - np. nietypowe transakcje karty kredytowej w celu zapobieganiu nielegalnym operacjom, wykrywanie usterek produkcyjnych.
+				\item Wykrywanie nowości (ang. novelty detection)
+				\item Uczenie przy użyciu reguł asocjacyjnych (ang.association rule learning) - analiza ogromnej ilości danych i wykrycie interesujących zależności pomiędzy atrybutami.
+			\end{enumerate}
+			\item Uczenie półnadzorowane (ang. semisupervised learning) - część danych jest oznakowana, a większość nie, bo etykietowanie jest czasochłonne i kosztowne. 
+			\item Uczenie samonadzorowane (ang.self-supervised learning) - wygenerowanie w pełni oznakowanego zestawu danych z zestawu całkowicie nieoznakowanego.
+			\item Uczenie transferowe (ang. transfer learning) - korzysta się w głębokcih sieciach neuronowych.
+			\item Uczenie przez wzmacnianie (ang. reinforcment learning) - system uczący tzw. agent może obserwować środowisko, dobierać i wykonywać czynności, a także odbierać nagrody lub kary. Potem uczy się samodzielnie najlepszej strategii (ang. policy), aby uzyskiwać jak największą nagrodę. Polityka definiuje rodzja działania, jakie agent powinien wybrać w danej sytuacji.
+			\item Uczenie wsadowe (ang. batch learning) - system nie jest w stanie trenować przyrostowo - do jego anuki muszą wystarczyć wszystkie dostępne dane (zużywa zwykle dużo czasu i zasobów, dlatego zwykle w trybie offline). System najpierw jest uczony, a potem wdrożony do cyklu produkcyjnego i już więcej nie jest trenowany; korzysta jedynie z dotychczas zdobytych informacji. Tzw. uczenie offline (ang. offline learning).
+			Następuje rozkład modelu (ang. model rot) albo dryf danych (ang. data drift). Rozwiązanie: systematyczne trenowanie modelu, zależne od problemu. System trenuje się od podstaw na starym i nowym zestawie za każdym razem.
+			\item Uczenie przyrostowe (ang. online learning) - trenowany jest na bieżąco poprzez sekwencyjne dostarczanie danych, które mogą być pojedyncze lub przeyjować postać tzw. minipakietów (mini-batches). Każdy krok uczący jest szybki i niezbyt kosztowny.
+		\end{enumerate}
+	\end{enumerate}
+\end{document}

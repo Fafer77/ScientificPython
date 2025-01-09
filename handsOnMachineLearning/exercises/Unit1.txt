@@ -1,0 +1,39 @@
+1. Machine learning - gives computers chance to learn without explicitly coding what they have to do. Instead of considering each situation in algorithm model learn to operate based on patterns taught in data.
+
+2. a) Classification b) Predicting c) Separating clients into categories (and grouping them) d) voice detection
+
+3. Labelel data is a set where output are known, so we know the answers for these problems
+
+4. Classification (predicting class label) and Predicting real valued output
+
+5. a) Clustering b) anomaly detection c) novelty detection d) association rule learning e) visualisation and dimenion reduction
+
+6. Reinforcemt learning
+
+7. Clustering algorithm (unsupervised learning)
+
+8. Supervised
+
+9. Online learning creates system that can be learning "online" meaning when it is working
+
+10. Out-of-core learning is training models using sets outside the memory of device
+
+11. k-nearest-neighbor 
+
+12. Hyperparameter is something that is set before model is taught and it can't be changed, it tells how the model should learn.    
+Parameters are created once learning is finished
+
+13. Model based learning algorithms want to find params that align observed data with the given model. They find parameters by approximating given data and their result. Then they use these parameters to make predictions
+
+14. a) Poor quality of data b) Lack of data) c) data that is not representative d) irrelevant data e) overfitting f) underfitting
+
+15. Overfitting -> a) reduce the noise in data b) get more representative data c) simplify the algorithm 
+
+16. Test set is set of data that is used before releasing our model. It helps us estimate performance of our algorithm. If we are unsatisfied with the results it can be learned once again.
+
+17. Dev-set is used for selecting hyperparameters. It helps us test whether hyperparameters weren't chosen specifically for the learning data. We see how it works on dev-set and then the best one is learned again on training + dev sets and tested on test set.
+It helps assess correct values of hyperparameters
+
+18. Train-dev-set - helps answer the question whether problem is in data or model itself. It is needed when dev-set differs from training set, lack of data, diagnose whether there is problem with overfitting or underfitting
+
+19. Overfitting, misleading the reality as we have adjusted our model to the result and our model is tested on this result. Data in the future can be much different that this smaller fraction of overall dataset
