@@ -1,0 +1,2 @@
+1. SGD as it chooses mini-batches of data set.
+2. Gradient descent
